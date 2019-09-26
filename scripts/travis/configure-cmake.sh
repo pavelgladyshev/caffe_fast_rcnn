@@ -16,8 +16,8 @@ else
 fi
 
 if $WITH_CUDA ; then
-  # Only build SM50
-  ARGS="$ARGS -DCPU_ONLY=Off -DCUDA_ARCH_NAME=Manual -DCUDA_ARCH_BIN=\"50\" -DCUDA_ARCH_PTX=\"\""
+  # Only build SM61
+  ARGS="$ARGS -DCPU_ONLY=Off -DCUDA_ARCH_NAME=Manual -DCUDA_ARCH_BIN=\"61\" -DCUDA_ARCH_PTX=\"\""
 else
   ARGS="$ARGS -DCPU_ONLY=On"
 fi
