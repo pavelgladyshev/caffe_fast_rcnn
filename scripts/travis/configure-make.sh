@@ -25,7 +25,7 @@ fi
 
 if $WITH_CUDA ; then
   # Only build SM50
-  LINE "CUDA_ARCH := -gencode arch=compute_50,code=sm_50"
+  LINE "CUDA_ARCH := -gencode arch=compute_61,code=sm_61"
 else
   LINE "CPU_ONLY := 1"
 fi
